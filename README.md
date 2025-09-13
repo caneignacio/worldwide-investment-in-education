@@ -30,7 +30,7 @@ The main goal of this work is to examine the correlation between public investme
 
 ### Exploratory Data Analysis
 
-The available data for this project consists in two datasets and their respective metadata files. They are available in the [UNESCO Institute for Statistics](unesco.com) website. According to the information in the metadata files, the datasets contain the following data:
+The available data for this project consists in two datasets and their respective metadata files. They are available in the [UNESCO Institute for Statistics](https://databrowser.uis.unesco.org/) website. According to the information in the metadata files, the datasets contain the following data:
 
 --data-xgdp.csv: Government expenditure on education as a percentage of GDP, for different countries and years.
 
