@@ -194,7 +194,7 @@ The report consists on a front cover and three more pages, with the following el
 
   - On the top of the page, there is the navigation panel, with the title and different buttons. There is no additional info button in this page, since it was not considered necessary.
 
-- There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
+  - There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
 
 - _Evolution_:
 
