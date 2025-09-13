@@ -46,9 +46,12 @@ The steps taken and main results can be summed up as follows:
 
 All datasets were queried to investigate their number of rows, number of columns, and name of each column. A short random sample of each dataset was taken too. Some of the commands used were:
 
-`df = pd.read_csv('./`data`.csv') `
+`df = pd.read_csv('./data.csv')`
+
 `df.shape[0] `
+
 `df.info()`
+
 `df.sample(n=5, random_state=1) `
 
 The results of these initial queries are the following:
