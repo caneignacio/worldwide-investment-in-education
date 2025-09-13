@@ -62,7 +62,7 @@ The results of these initial queries are the following:
 |data-ea|1793|6|
 |data-resden|2857|6|
 
--**Null values**:
+**Null values**:
 
 The number of null values per column was obtained with the `df.isnull().sum()` method. In all datasets, there are two columns which have little to no values. These columns represent additional characteristics of the values measured for any given row and will not be considered for the analysis.
 
@@ -87,23 +87,23 @@ data-resden.csv:
 |qualifier|97%|
 |magnitude|100%|
 
--**Data types**:
+**Data types**:
 
 The data type of each column was checked by using `df.dtypes`. For all the datasets, two columns are text-type or mixed (“object” type in Pandas, representing codes), whereas other two are number-type (as was already stated, there are two other columns that will not be considered).
 
 The text-type or mixed columns are:
 
-indicatorId: text that represents the value measured with a code (e.g. percentage of graduates).
+- indicatorId: text that represents the value measured with a code (e.g. percentage of graduates).
 
-geoUnit: text that represents the country with a code. 
+- geoUnit: text that represents the country with a code. 
 
 The number-type columns are:
 
-“year”: integer that represents years (to be considered date-type).
+- year: integer that represents years (to be considered date-type).
 
-“value”: float that represents the measured value.
+- value: float that represents the measured value.
 
--**Statistical summary**:
+**Statistical summary**:
 
 Some general statistical indicators were drawn for numeric columns, using the `df.describe()` method.
 
@@ -130,13 +130,13 @@ data-resden.csv
 
 It should be noted that, for the “year” columns, the mode, i.e., the most frequent value, might be a better measure than the arithmetic mean. Therefore, it was also calculated using `df[“Column”].mode()`:
 
-data-xgdp.csv: 2017
+- data-xgdp.csv: 2017
 
-data-ea.csv: 2019
+- data-ea.csv: 2019
 
-data-resden.csv: 2015
+- data-resden.csv: 2015
 
--**Cardinality**:
+**Cardinality**:
 
 For each dataset, the number of distinct values per column was checked with the following code:
 
@@ -167,13 +167,12 @@ The data from the datasets was first uploaded to Power BI and transformed in the
 After generating the fact tables, a _Dates_ calculated table was created to work as a calendar table, and a one-to-many relationship was established from this table’s “Date” column to the fact tables’ “Date” columns.
 
 In addition, a _Countries_ calculated table was created with a web connection to the [CODE FOR IATI](https://codelists.codeforiati.org/RegionM49/) site, that replicates UN’s “Standard Country or Area Codes for Statistical Use”. A one-to-many relationship was established from this table’s “Code” column to the fact tables’ “Country” columns.
+
 Finally, two calculated columns were created in the _Countries_ table: “Cluster_Graduates” and “Cluster_Researchers”. These columns classify countries in tertiles, regarding their Expenditure, Graduates, and Researchers values.
 
 The “Cluster_Graduates” column assigns the “Low” value to the country if it is on the lower tertile for Expenditure or Graduates, the “Medium” value if both are in the medium tertile or higher, and the “High” value if both are in the higher tertile. “Cluster_Researchers” works the same way, but considering Expenditure and Researchers values.
 
 The following image shows the definitive semantic model:
-
- 
 
 ### Power BI Report
 
@@ -183,45 +182,29 @@ The report consists on a front cover and three more pages, with the following el
 
 - _Front Cover_:
 
-This page shows the title of the project and buttons to navigate to the rest of the report, with icons representing the different pages. The rest of the pages have a panel on the top section with the same icons, which allows for navigation to other pages, and a button to return to this cover.
+  - This page shows the title of the project and buttons to navigate to the rest of the report, with icons representing the different pages. The rest of the pages have a panel on the top section with the same icons, which allows for navigation to other pages, and a button to return to this cover.
 
 - _Top Ranked_:
 
-On the top of the page, there is the navigation panel, with the title and different buttons.
+  - On the top of the page, there is the navigation panel, with the title and different buttons.
 
- 
-
-On the left side, there is a map with colour fills of different intensity, regarding the level of Expenditure, Graduates and Researchers. The right side shows a bar chart with the top countries by Expenditure, Graduates and Researchers. For both visualizations, the three buttons on the right can be clicked to choose which one of the three variables to display.
-
- 
+  - On the left side, there is a map with colour fills of different intensity, regarding the level of Expenditure, Graduates and Researchers. The right side shows a bar chart with the top countries by Expenditure, Graduates and Researchers. For both visualizations, the three buttons on the right can be clicked to choose which one of the three variables to display.
 
 - _All Countries_:
 
-On the top of the page, there is the navigation panel, with the title and different buttons. There is no additional info button in this page, since it was not considered necessary.
+  - On the top of the page, there is the navigation panel, with the title and different buttons. There is no additional info button in this page, since it was not considered necessary.
 
- 
-
-There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
-
- 
+- There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
 
 - _Evolution_:
 
-Once again, the top of the page shows the navigation panel, with the title and its buttons.
+  - Once again, the top of the page shows the navigation panel, with the title and its buttons.
 
- 
+  - The left side of the page has a line chart visualization that compares the level of Expenditure, Graduates, and Researchers, over time. The variables can be chosen a pair at a time.
 
-The left side of the page has a line chart visualization that compares the level of Expenditure, Graduates, and Researchers, over time. The variables can be chosen a pair at a time.
+  - There are three buttons on the right side, that can be used to choose the desired pair of variables.
 
- 
-
-There are three buttons on the right side, that can be used to choose the desired pair of variables.
-
- 
-
-Finally, there are three slicers. The first one can be used to lag the Expenditure variable, to check if there is a delayed correlation between this variable and the others. The second and third slicers allow filtering by Graduates level or Researchers level (these levels are the tertiles shown in the scatter plot visuals on the previous page).
-
- 
+  - Finally, there are three slicers. The first one can be used to lag the Expenditure variable, to check if there is a delayed correlation between this variable and the others. The second and third slicers allow filtering by Graduates level or Researchers level (these levels are the tertiles shown in the scatter plot visuals on the previous page).
 
 ### Key Insights
 
@@ -229,20 +212,20 @@ This report is intended to allow people all around the world to draw insights ab
 
 - The top 10 countries for each variable span different continents. In particular, the top 3 countries for each variable are:
 
-Top 3 expenditure (Oceania):
-Tuvalu
-American Samoa 
-Kiribati
+  - Top 3 expenditure (Oceania):
+    - Tuvalu
+    - American Samoa 
+    - Kiribati
 
-Top 3 graduates:
-Kazakhstan (Asia)
-Canada (America)
-Uzbekistan (Asia)
+  - Top 3 graduates:
+    - Kazakhstan (Asia)
+    - Canada (America)
+    - Uzbekistan (Asia)
 
-Top 3 researchers (Europe):
-Lichtenstein
-Finland
-Iceland
+  - Top 3 researchers (Europe):
+    - Lichtenstein
+    - Finland
+    - Iceland
 
 - There are 10 countries in the higher tertile both for expenditure and percentage of graduates. These countries are Belgium, Cyprus, Denmark, Finland, Iceland, Israel, Montserrat, Norway, Sweden, and USA. There are no countries in the higher tertile both for expenditure and number of researchers.
 
