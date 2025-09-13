@@ -32,17 +32,17 @@ The main goal of this work is to examine the correlation between public investme
 
 The available data for this project consists in two datasets and their respective metadata files. They are available in the [UNESCO Institute for Statistics](https://databrowser.uis.unesco.org/) website. According to the information in the metadata files, the datasets contain the following data:
 
---data-xgdp.csv: Government expenditure on education as a percentage of GDP, for different countries and years.
+- data-xgdp.csv: Government expenditure on education as a percentage of GDP, for different countries and years.
 
--data-ea.csv: Percentage of people that completed short-cycle tertiary education or higher, for different countries and years.
+- data-ea.csv: Percentage of people that completed short-cycle tertiary education or higher, for different countries and years.
 
--data-resden.csv: Number of researchers per million inhabitants.
+- data-resden.csv: Number of researchers per million inhabitants.
 
 As a first step, an initial exploration was performed in Python for each of the files. The code can be found in the respective “initial-exploration” python files (one for each dataset) on this Github repository.
 
 The steps taken and main results can be summed up as follows:
 
--**General information**:
+**General information**:
 
 All datasets were queried to investigate their number of rows, number of columns, and name of each column. A short random sample of each dataset was taken too. Some of the commands used were:
 
