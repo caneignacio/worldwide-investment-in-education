@@ -178,7 +178,7 @@ The following image shows the definitive semantic model:
 
 ### Power BI Report
 
-A report was built upon the model. The editable version can be found in the [.pbix file](files/worldwide-investment-in-education.pbix) on this Github repository. There is also an open link to a read-only version of the report on [this link](https://app.powerbi.com/view?r=eyJrIjoiMTAzZmY3ZGYtM2ZiMS00YzQ4LTg5MTAtMDNjNTI4MzYyMTMzIiwidCI6IjM1NDg3YTU2LTFlNGYtNDAzNC04ODNkLWViYjBiMDMxZDNjNCIsImMiOjR9&pageName=5dbfd74657df6de26bbd).
+A report was built upon the model. The .pbix file can be downloaded by entering [this link](files/worldwide-investment-in-education.pbix). There is also an open link to a read-only version of the report available on [this link](https://app.powerbi.com/view?r=eyJrIjoiMTAzZmY3ZGYtM2ZiMS00YzQ4LTg5MTAtMDNjNTI4MzYyMTMzIiwidCI6IjM1NDg3YTU2LTFlNGYtNDAzNC04ODNkLWViYjBiMDMxZDNjNCIsImMiOjR9&pageName=5dbfd74657df6de26bbd).
 
 The report consists on a front cover and three more pages, with the following elements:
 
