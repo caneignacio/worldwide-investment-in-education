@@ -190,23 +190,39 @@ The report consists on a front cover and three more pages, with the following el
 
   - On the top of the page, there is the navigation panel, with the title and different buttons.
 
+![](/top-ranked-top.png.bmp)
+
   - On the left side, there is a map with colour fills of different intensity, regarding the level of Expenditure, Graduates and Researchers. The right side shows a bar chart with the top countries by Expenditure, Graduates and Researchers. For both visualizations, the three buttons on the right can be clicked to choose which one of the three variables to display.
+
+![](/top-ranked-bottom.png.bmp)
 
 - _All Countries_:
 
   - On the top of the page, there is the navigation panel, with the title and different buttons. There is no additional info button in this page, since it was not considered necessary.
 
+![](/all-countries-top.png.bmp)
+
   - There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
+
+![](/all-countries-bottom.png.bmp)
 
 - _Evolution_:
 
   - Once again, the top of the page shows the navigation panel, with the title and its buttons.
 
+![](/evolution-top.png.bmp)
+
   - The left side of the page has a line chart visualization that compares the level of Expenditure, Graduates, and Researchers, over time. The variables can be chosen a pair at a time.
+
+![](/evolution-left.png.bmp)
 
   - There are three buttons on the right side, that can be used to choose the desired pair of variables.
 
+![](/evolution-right1.png.bmp)
+
   - Finally, there are three slicers. The first one can be used to lag the Expenditure variable, to check if there is a delayed correlation between this variable and the others. The second and third slicers allow filtering by Graduates level or Researchers level (these levels are the tertiles shown in the scatter plot visuals on the previous page).
+
+![](/evolution-right2.png.bmp)
 
 ### Key Insights
 
@@ -237,7 +253,7 @@ This report is intended to allow people all around the world to draw insights ab
 
 As it was previously stated, an informational video was developed with the main conclusions of this analysis. It was designed as if it were authored by _Policy Checkers_, a fictional NGO which informs the public about different policies worldwide and their impact.
 
-The [informational-video.mp4] video file can be found on this Github repository.
+The informational video can be browsed via Youtube, by clicking [this link](https://www.youtube.com/watch?v=aaXTHNQGvqU).
 
 ### Data Source
 
