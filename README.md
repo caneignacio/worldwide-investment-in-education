@@ -174,6 +174,8 @@ The “Cluster_Graduates” column assigns the “Low” value to the country if
 
 The following image shows the definitive semantic model:
 
+![](/model.bmp)
+
 ### Power BI Report
 
 A report was built upon the model. The editable version can be found in the [unescoeducation-uis.pbix] file on this Github repository. There is also an open link to a read-only version of the report on [this link](report.link).
