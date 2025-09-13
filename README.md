@@ -190,39 +190,39 @@ The report consists on a front cover and three more pages, with the following el
 
   - On the top of the page, there is the navigation panel, with the title and different buttons.
 
-![](/top-ranked-top.png.bmp)
+![](/top-ranked-top.png)
 
   - On the left side, there is a map with colour fills of different intensity, regarding the level of Expenditure, Graduates and Researchers. The right side shows a bar chart with the top countries by Expenditure, Graduates and Researchers. For both visualizations, the three buttons on the right can be clicked to choose which one of the three variables to display.
 
-![](/top-ranked-bottom.png.bmp)
+![](/top-ranked-bottom.png)
 
 - _All Countries_:
 
   - On the top of the page, there is the navigation panel, with the title and different buttons. There is no additional info button in this page, since it was not considered necessary.
 
-![](/all-countries-top.png.bmp)
+![](/all-countries-top.png)
 
   - There are two scatter plot visualizations in this page, representing the distribution of Expenditure vs Graduates level, and Expenditure vs Researchers level, respectively. The colours on the visuals correspond to “Cluster_Graduates” and “Cluster_Researchers”, the cluster columns already discussed.
 
-![](/all-countries-bottom.png.bmp)
+![](/all-countries-bottom.png)
 
 - _Evolution_:
 
   - Once again, the top of the page shows the navigation panel, with the title and its buttons.
 
-![](/evolution-top.png.bmp)
+![](/evolution-top.png)
 
   - The left side of the page has a line chart visualization that compares the level of Expenditure, Graduates, and Researchers, over time. The variables can be chosen a pair at a time.
 
-![](/evolution-left.png.bmp)
+![](/evolution-left.png)
 
   - There are three buttons on the right side, that can be used to choose the desired pair of variables.
 
-![](/evolution-right1.png.bmp)
+![](/evolution-right1.png)
 
   - Finally, there are three slicers. The first one can be used to lag the Expenditure variable, to check if there is a delayed correlation between this variable and the others. The second and third slicers allow filtering by Graduates level or Researchers level (these levels are the tertiles shown in the scatter plot visuals on the previous page).
 
-![](/evolution-right2.png.bmp)
+![](/evolution-right2.png)
 
 ### Key Insights
 
