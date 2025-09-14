@@ -249,7 +249,7 @@ This report is intended to allow people all around the world to draw insights ab
 
 - Considering all countries, there is no simple correlation between the level of expenditure in education, percentage of tertiary graduates, and number of researchers. However, when filtering by the higher tertile for expenditure and percentage of graduates, a positive correlation can be seen between all variables.
 
-## Informational Video
+### Informational Video
 
 As it was previously stated, an informational video was developed with the main conclusions of this analysis. It was designed as if it were authored by _Policy Checkers_, a fictional NGO which informs the public about different policies worldwide and their impact.
 
